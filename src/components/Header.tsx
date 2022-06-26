@@ -1,12 +1,12 @@
 import React from 'react'
-import { FlexRow } from '../elements'
+import { FlexRow, Text } from '../elements'
+import title from '../images/white-band-name.png'
 
-export default function Header() {
+export default function Header(props: any) {
   return (
-    <FlexRow justifyContent="space-between">
-      <p>hello</p>
-      <p>hello</p>
-      <p>hello</p>
+    <FlexRow height="110px" justifyContent="space-between">
+      <img src={title} />
+      <LinkBar />
     </FlexRow>
   )
 }
