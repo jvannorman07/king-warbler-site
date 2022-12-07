@@ -1,17 +1,21 @@
 import React from 'react'
-import { FlexRow, FlexColumn } from '../elements'
-import { MailIcon } from '@heroicons/react/outline'
-import spotify from '../images/spotify.svg'
+import { FlexRow, Anchor } from '../elements'
+import { FiMail } from 'react-icons/fi'
+import { BsInstagram, BsSpotify } from 'react-icons/bs'
 
 export default function IconLinkBar() {
   return (
-    <FlexRow justifyContent="space-between">
-      <FlexRow>
-        <FlexRow mr="medium">
-          <MailIcon color="white" width="28px" />
-        </FlexRow>
-        <img src={spotify} width="28px" />
-      </FlexRow>
+    <FlexRow width="140px" justifyContent="space-between" alignItems="center">
+      <Anchor href="mailto:kingwarbler@gmail.com">
+        <FiMail style={{ color: 'white' }} />
+      </Anchor>
+      <Anchor href="http://instagram.com/kingwarbler">
+        <BsInstagram />
+      </Anchor>
+      <Anchor href="https://open.spotify.com/artist/6Tmyr4GsLOUKr02giYE0gZ?si=cifu_l6jTCGUsFFCq_-GJA">
+        <BsSpotify />
+      </Anchor>
     </FlexRow>
   )
 }
+;``

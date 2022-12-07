@@ -22,6 +22,6 @@ const StyledBox = filterProps(styled.div)`
   ${interactive}
 `
 
-const Box = React.forwardRef((props, ref) => <StyledBox {...props} ref={ref} />)
+const Box = React.forwardRef((props: any, ref) => <StyledBox {...props} ref={ref} />)
 
 export default Box
