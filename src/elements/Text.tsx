@@ -15,6 +15,7 @@ text-overflow: ellipsis;`
 
   ${({ whiteSpace }: any) => (whiteSpace ? `white-space: ${whiteSpace}` : '')};
   ${({ textTransform }: any) => (textTransform ? `text-transform: ${textTransform}` : '')};
+  ${({ textDecoration }: any) => (textDecoration ? `text-decoration: ${textDecoration}` : '')};
 
   ${compose(color, flexbox, layout, space, typography, border)}
 
@@ -23,7 +24,8 @@ text-overflow: ellipsis;`
 Text.defaultProps = {
   fontSize: 'medium',
   lineHeight: 'medium',
-  color: 'foreground.0',
+  fontWeight: 'inherit',
+  color: 'inherit',
   truncate: false,
 }
 
