@@ -1,13 +1,16 @@
 import React from 'react'
 import { FlexColumn, FlexRow, Video, Text, Anchor } from '../elements'
-import { Mixtape, Layout } from '../components'
+import { Layout } from '../components'
 
 export default function HomePage() {
   return (
     <Layout>
       <FlexColumn alignItems="center">
         <FlexColumn mb="gigantic">
-          <Mixtape />
+          <Video
+            src="https://www.youtube.com/embed/XiZ3Xg9GfpQ?si=N0jHUpeBR0cij22z"
+            title="Lifestyle"
+          />
         </FlexColumn>
         <FlexColumn mb="gigantic">
           <Video src="https://www.youtube.com/embed/x4T_D-JYyf4" title="Wash Out" />

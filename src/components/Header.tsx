@@ -14,6 +14,9 @@ const Header = (props: any) => {
       pt="xxlarge"
       {...props}
     >
+      <FlexRow justifyContent="center" gap="12px">
+        <span>hello</span>
+      </FlexRow>
       <Box mb="medium">
         <img src={title} className="header-title" />
       </Box>
