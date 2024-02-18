@@ -10,6 +10,8 @@ const FILTERED_PROPS = [
 ]
 
 export function filterProps(component: any) {
+  return null
+
   return component.withConfig({
     shouldForwardProp: (prop: any, defaultValidatorFn: any) =>
       !FILTERED_PROPS.includes(prop) && defaultValidatorFn(prop),
