@@ -1,21 +1,17 @@
-import React, { useState } from 'react'
-import theme from '../theme'
-import { ThemeProvider } from 'styled-components'
+import React from 'react'
 import { IconContext } from 'react-icons'
-import { FlexColumn, Box } from '../elements'
 import Header from './Header'
 import PageContent from './PageContent'
-import './layout.css'
 
 export default function Layout(props: any) {
   return (
-    <ThemeProvider theme={theme}>
-      <IconContext.Provider value={{ color: 'white', size: '28px' }}>
-        <FlexColumn>
+    <IconContext.Provider value={{ color: 'white', size: '28px' }}>
+      <div className="flex flex-col">
+        <div>
           <Header />
-          <PageContent>{props.children}</PageContent>
-        </FlexColumn>
-      </IconContext.Provider>
-    </ThemeProvider>
+        </div>
+        <PageContent>{props.children}</PageContent>
+      </div>
+    </IconContext.Provider>
   )
 }
