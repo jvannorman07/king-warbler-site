@@ -5,7 +5,7 @@ const config: GatsbyConfig = {
     title: `King Warbler Site`,
     siteUrl: `https://www.yourdomain.tld`,
   },
-  plugins: ['gatsby-plugin-styled-components'],
+  plugins: ['gatsby-plugin-postcss'],
 }
 
 export default config

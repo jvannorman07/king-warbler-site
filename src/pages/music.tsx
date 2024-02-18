@@ -1,6 +1,5 @@
 import React from 'react'
-import { Layout, AudioIframe } from '../components'
-import { FlexColumn } from '../elements'
+import { Layout } from '../components'
 
 type Props = {}
 
@@ -9,17 +8,18 @@ export default function MusicPage(props: Props) {
 
   return (
     <Layout>
-      <FlexColumn alignItems="center">
-        <FlexColumn mb="gigantic">
+      <div className="flex flex-col items-center">
+        <div className="flex flex-col mb-[64px]">
           <iframe
-            style={{ border: 0, width: '350px', height: '786px' }}
-            src="https://bandcamp.com/EmbeddedPlayer/album=1771174418/size=large/bgcol=333333/linkcol=0f91ff/transparent=true/"
-            seamless
-          >
-            <a href="https://kingwarbler.bandcamp.com/album/texas-sky">Texas Sky by King Warbler</a>
-          </iframe>
-        </FlexColumn>
-      </FlexColumn>
+            style={{ borderRadius: '12px' }}
+            src="https://open.spotify.com/embed/album/5kNPfSAE5Bmkh9F6Q5nTan?utm_source=generator"
+            width="750"
+            height="750"
+            allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+            loading="lazy"
+          ></iframe>
+        </div>
+      </div>
     </Layout>
   )
 }

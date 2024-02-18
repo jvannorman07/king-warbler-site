@@ -1,10 +1,5 @@
 import React from 'react'
-import { FlexColumn } from '../elements'
 
 export default function PageContent({ children }: any) {
-  return (
-    <FlexColumn minWidth="0" px="xgigantic">
-      {children}
-    </FlexColumn>
-  )
+  return <div className="flex flex-col min-w-0 px-[64px]">{children}</div>
 }
