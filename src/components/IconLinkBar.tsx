@@ -5,7 +5,7 @@ import { BsInstagram, BsSpotify } from 'react-icons/bs'
 
 export default function IconLinkBar() {
   return (
-    <div className="flex w-[140px] justify-between items-center">
+    <div className="flex w-[140px] justify-between items-center gap-x-2 sm:gap-x-0">
       <Anchor href="mailto:kingwarbler@gmail.com">
         <FiMail style={{ color: 'white' }} />
       </Anchor>

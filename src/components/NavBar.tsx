@@ -31,7 +31,7 @@ export default function NavBar(props: Props & Record<string, any>) {
 
         return (
           <div className={linkClass} key={tab.label}>
-            <Link to={`/${route}`} className="text-white text-xl">
+            <Link to={`/${route}`} className="text-white sm:text-xl">
               {label}
             </Link>
           </div>
