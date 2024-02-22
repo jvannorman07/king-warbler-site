@@ -25,7 +25,7 @@ export default function AboutUs(props: Props) {
     <Layout>
       <div className="flex flex-col gap-y-12 items-center">
         <img src={bandPhoto} width="600px" alt="King Warbler" />
-        <div className="px-64">{bio}</div>
+        <div className="sm:px-64">{bio}</div>
       </div>
     </Layout>
   )
