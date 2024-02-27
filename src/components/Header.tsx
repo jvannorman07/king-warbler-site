@@ -11,6 +11,7 @@ const navTabs = [
   { label: 'Music', route: 'music' },
   // { label: 'Merch', route: 'merch' },
   { label: 'About Us', route: 'about-us' },
+  { label: 'Press', route: 'press' },
 ]
 
 export default function Header(props: any) {
