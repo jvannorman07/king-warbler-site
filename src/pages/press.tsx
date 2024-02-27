@@ -1,15 +1,7 @@
 import React from 'react'
 import { Layout, PressContent, LifestyleSongOfTheDay } from '../components'
 
-type Props = {}
-
-{
-  /* <img src="https://kutx.org/wp-content/uploads/2021/07/kutx989-logo.svg" class="custom-logo" alt="KUTX" decoding="async"></img> */
-}
-
-export default function Press(props: Props) {
-  const {} = props
-
+export default function Press() {
   return (
     <Layout>
       <div className="flex flex-col w-full items-center gap-y-12">
@@ -28,15 +20,4 @@ export default function Press(props: Props) {
       </div>
     </Layout>
   )
-}
-
-{
-  /* <PressContent
-  link="https://kutx.org/song-of-the-day/king-warbler-lifestyle/"
-  pressLogoSrc="https://kutx.org/wp-content/uploads/2021/07/kutx989-logo.svg"
-  pressLogoAlt="KUTX"
-  pressTitle="KUTX Song of the Day"
-  pressImgSrc="../images/kutx-pic.jpg"
-  pressText={<LifestyleSongOfTheDay />}
-/> */
 }
