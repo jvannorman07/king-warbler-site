@@ -1,6 +1,6 @@
 import React from 'react'
+import { StaticImage } from 'gatsby-plugin-image'
 import { Layout } from '../components'
-import bandPhoto from '../images/fence-somber.png'
 
 const bio = (
   <span>
@@ -24,7 +24,7 @@ export default function AboutUs(props: Props) {
   return (
     <Layout>
       <div className="flex flex-col gap-y-12 items-center">
-        <img src={bandPhoto} width="600px" alt="King Warbler" />
+        <StaticImage src="../images/fence-somber.png" alt="King Warbler" width={600} />
         <div className="sm:px-64">{bio}</div>
       </div>
     </Layout>
